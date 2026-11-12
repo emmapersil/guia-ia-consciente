@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Guia de IA Consciente</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Guia simples para usar a inteligência artificial com consciência, segurança e ética: o que é, como funciona, riscos, dicas de proteção e um quiz.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-inner">
+      <a class="marca" href="#inicio">IA Consciente</a>
+      <div class="tamanho" role="group" aria-label="Tamanho do texto">
+        <span class="tamanho-rotulo" aria-hidden="true">Texto</span>
+        <button type="button" id="fonte-menor" aria-label="Diminuir o texto">A−</button>
+        <button type="button" id="fonte-maior" aria-label="Aumentar o texto">A+</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="abertura" id="inicio">
+      <div class="faixa">
+        <p class="sobretitulo">Guia para a comunidade</p>
+        <h1>Você já usa inteligência artificial. Vamos usar com segurança.</h1>
+        <p class="lead">A IA está no celular, nos vídeos que aparecem para você e no atendimento do banco. Este guia explica, em linguagem simples, como ela funciona, quais golpes usam IA e como proteger você e sua família.</p>
+        <nav class="sumario" aria-label="Seções do guia">
+          <a href="#o-que-e">O que é IA</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#dia-a-dia">No dia a dia</a>
+          <a href="#riscos">Riscos e golpes</a>
+          <a href="#protecao">Proteja-se</a>
+          <a href="#direitos">Seus direitos</a>
+          <a href="#quiz" class="sumario-destaque">Quiz: Golpe ou não?</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="secao" id="o-que-e" aria-labelledby="t-o-que-e">
+      <div class="faixa">
+        <h2 id="t-o-que-e">O que é inteligência artificial</h2>
+        <p class="texto">É um programa de computador que aprende com muitos exemplos e usa o que aprendeu para fazer tarefas que antes só pessoas faziam. A IA não pensa nem sente. Ela calcula qual resposta é a mais provável.</p>
+        <blockquote class="frase">A IA é como um aluno que leu muita coisa e responde pelo que parece mais provável, mas nem sempre está certo.</blockquote>
+        <dl class="termos">
+          <div class="termo">
+            <dt>Aprendizado de máquina</dt>
+            <dd>Em vez de seguir regras escritas, a IA aprende com milhares de exemplos. O filtro de spam do seu e-mail aprendeu assim.</dd>
+          </div>
+          <div class="termo">
+            <dt>IA generativa</dt>
+            <dd>É a IA que cria coisas novas: textos, imagens, vozes e vídeos. ChatGPT, Gemini e Claude são exemplos.</dd>
+          </div>
+          <div class="termo">
+            <dt>Algoritmo de recomendação</dt>
+            <dd>É a IA que escolhe o que mostrar para você, com base no que você já viu. Está no YouTube, na Netflix e no Instagram.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="secao secao-alt" id="como-funciona" aria-labelledby="t-como-funciona">
+      <div class="faixa">
+        <h2 id="t-como-funciona">Como a IA monta uma resposta</h2>
+        <p class="texto">A IA responde pelo que é provável, não pelo que é verdade. Por isso ela soa confiante mesmo quando erra.</p>
+        <ol class="fluxo">
+          <li><strong>Muitos dados</strong><span>Textos, fotos, sites e conversas</span></li>
+          <li><strong>Treinamento</strong><span>Ela aprende os padrões das palavras</span></li>
+          <li><strong>Sua pergunta</strong><span>O que você digita ou fala</span></li>
+          <li><strong>Resposta provável</strong><span>Montada palavra por palavra</span></li>
+        </ol>
+        <div class="alerta" role="note">
+          <p class="alerta-titulo">Atenção: a IA pode inventar</p>
+          <p>Quando falta informação, ela completa com algo que parece certo. Isso se chama "alucinação". Confira sempre o que for importante, como saúde, dinheiro e leis, em fontes oficiais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="dia-a-dia" aria-labelledby="t-dia-a-dia">
+      <div class="faixa">
+        <h2 id="t-dia-a-dia">Onde você já encontra IA</h2>
+        <p class="texto">Todos nós já tivemos contato com IA, muitas vezes sem perceber.</p>
+        <div class="tabela-rolagem">
+          <table class="tabela">
+            <thead>
+              <tr><th scope="col">Onde</th><th scope="col">Exemplo</th><th scope="col">Cuidado</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Celular</th><td>Assistente de voz, desbloqueio pelo rosto, teclado que completa palavras</td><td>Revise as permissões de microfone e câmera</td></tr>
+              <tr><th scope="row">Vídeos e redes</th><td>Sugestões do YouTube, Netflix, Instagram e TikTok</td><td>Você vê mais do mesmo; busque outras fontes</td></tr>
+              <tr><th scope="row">Conversas</th><td>Tradutor automático, legendas, robôs no WhatsApp</td><td>Confira traduções importantes</td></tr>
+              <tr><th scope="row">Banco e lojas</th><td>Atendimento por robô no chat</td><td>Nunca passe senha ou código para um chat</td></tr>
+              <tr><th scope="row">Saúde</th><td>Apoio na análise de exames e triagem</td><td>A IA não substitui o médico</td></tr>
+              <tr><th scope="row">Estudo e trabalho</th><td>ChatGPT, Gemini e Claude para resumir e escrever</td><td>Confira as informações e não cole dados pessoais</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-alt" id="riscos" aria-labelledby="t-riscos">
+      <div class="faixa">
+        <h2 id="t-riscos">Riscos e golpes com IA</h2>
+        <p class="texto">A regra de ouro: <strong>desconfie da urgência e confirme por outro canal.</strong></p>
+        <div class="riscos">
+          <article class="risco risco-grave">
+            <h3>Golpe da voz clonada</h3>
+            <p>O golpista copia a voz de um parente usando áudios e vídeos da internet e liga pedindo dinheiro com urgência.</p>
+            <p class="defesa"><span>Como se proteger</span>Combine uma palavra-secreta com a família. Desligue e ligue de volta para o número que você já conhece.</p>
+          </article>
+          <article class="risco risco-grave">
+            <h3>Deepfake</h3>
+            <p>Vídeos falsos de famosos, médicos ou políticos vendendo produtos ou dizendo coisas que nunca disseram.</p>
+            <p class="defesa"><span>Como se proteger</span>Desconfie de promessas milagrosas. Repare na boca, nas piscadas e nas sombras. Procure a notícia em sites confiáveis.</p>
+          </article>
+          <article class="risco">
+            <h3>Notícias falsas</h3>
+            <p>Textos e imagens falsos criados em segundos e espalhados em grupos de mensagens.</p>
+            <p class="defesa"><span>Como se proteger</span>Antes de compartilhar, procure a notícia em uma agência de checagem ou em um jornal conhecido.</p>
+          </article>
+          <article class="risco">
+            <h3>Respostas inventadas</h3>
+            <p>O chatbot responde com segurança algo que não é verdade.</p>
+            <p class="defesa"><span>Como se proteger</span>Use a IA como ponto de partida e confira o que for importante em fontes oficiais.</p>
+          </article>
+          <article class="risco">
+            <h3>Vazamento de dados</h3>
+            <p>Pessoas colam CPF, fotos de documentos ou exames em chatbots e aplicativos.</p>
+            <p class="defesa"><span>Como se proteger</span>Não envie dados pessoais para a IA. Revise as permissões dos aplicativos.</p>
+          </article>
+          <article class="risco">
+            <h3>Preconceito da máquina</h3>
+            <p>A IA aprende com dados que têm preconceitos e pode repetir isso nas respostas e decisões.</p>
+            <p class="defesa"><span>Como se proteger</span>Questione os resultados e peça revisão por uma pessoa quando uma decisão afetar você.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="protecao" aria-labelledby="t-protecao">
+      <div class="faixa">
+        <h2 id="t-protecao">Checklist de proteção</h2>
+        <p class="texto">Marque o que você já faz. O que faltar, combine com a sua família hoje.</p>
+        <ul class="checklist" id="checklist">
+          <li><input type="checkbox" id="c1"><label for="c1">Combinei uma palavra-secreta com a minha família para pedidos de dinheiro</label></li>
+          <li><input type="checkbox" id="c2"><label for="c2">Quando recebo um pedido urgente, desligo e ligo de volta para o número que conheço</label></li>
+          <li><input type="checkbox" id="c3"><label for="c3">Não envio CPF, senhas, fotos de documentos ou exames para chatbots</label></li>
+          <li><input type="checkbox" id="c4"><label for="c4">Confiro a notícia em um site confiável antes de compartilhar</label></li>
+          <li><input type="checkbox" id="c5"><label for="c5">Desconfio de vídeos com promessas milagrosas, mesmo de pessoas famosas</label></li>
+          <li><input type="checkbox" id="c6"><label for="c6">Não clico em links de mensagens que pedem para "atualizar dados"</label></li>
+          <li><input type="checkbox" id="c7"><label for="c7">Confiro informações de saúde, dinheiro e leis em fontes oficiais</label></li>
+        </ul>
+        <p class="progresso" id="progresso" aria-live="polite">0 de 7 cuidados marcados</p>
+      </div>
+    </section>
+
+    <section class="secao secao-alt" id="direitos" aria-labelledby="t-direitos">
+      <div class="faixa">
+        <h2 id="t-direitos">Seus direitos</h2>
+        <p class="texto">No Brasil, a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018) diz que seus dados pessoais são seus. A ANPD é o órgão do governo que fiscaliza.</p>
+        <ul class="direitos">
+          <li><strong>Saber e corrigir.</strong> Você pode perguntar a uma empresa quais dados ela tem sobre você e pedir correção.</li>
+          <li><strong>Pedir exclusão.</strong> Em muitos casos, você pode pedir que seus dados sejam apagados.</li>
+          <li><strong>Revisão humana.</strong> Você pode pedir revisão de decisões tomadas só por máquina, como a recusa de um crédito.</li>
+          <li><strong>Sua imagem e sua voz.</strong> Usar o rosto ou a voz de alguém sem autorização para criar conteúdo falso viola direitos e pode ser crime.</li>
+          <li><strong>Uso com ética.</strong> Use a IA para aprender e ganhar tempo, sem enganar ninguém e sem espalhar o que não foi verificado.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao secao-quiz" id="quiz" aria-labelledby="t-quiz">
+      <div class="faixa">
+        <h2 id="t-quiz">Quiz: Golpe ou não?</h2>
+        <p class="texto">Leia cada situação e responda. Depois de cada resposta, você vê a explicação.</p>
+        <div class="quiz" id="quiz-caixa">
+          <div class="quiz-topo">
+            <span id="quiz-contador">Situação 1 de 7</span>
+            <span id="quiz-placar">0 acertos</span>
+          </div>
+          <div class="quiz-barra" aria-hidden="true"><span id="quiz-barra"></span></div>
+          <p class="quiz-situacao" id="quiz-situacao" aria-live="polite"></p>
+          <div class="quiz-botoes" id="quiz-botoes">
+            <button type="button" class="botao botao-golpe" data-resposta="golpe">É golpe</button>
+            <button type="button" class="botao botao-seguro" data-resposta="seguro">É seguro</button>
+          </div>
+          <div class="quiz-retorno" id="quiz-retorno" hidden>
+            <p class="quiz-veredito" id="quiz-veredito"></p>
+            <p id="quiz-explicacao"></p>
+            <button type="button" class="botao botao-proximo" id="quiz-proximo">Próxima situação</button>
+          </div>
+          <div class="quiz-fim" id="quiz-fim" hidden>
+            <p class="quiz-resultado" id="quiz-resultado"></p>
+            <p id="quiz-mensagem"></p>
+            <button type="button" class="botao botao-proximo" id="quiz-reiniciar">Jogar de novo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="faixa">
+      <p><strong>Fontes para saber mais:</strong>
+        <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">ANPD</a> ·
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">LGPD</a> ·
+        <a href="https://new.safernet.org.br" target="_blank" rel="noopener">SaferNet</a> ·
+        <a href="https://internetsegura.br" target="_blank" rel="noopener">Internet Segura (CGI.br)</a> ·
+        <a href="https://cetic.br" target="_blank" rel="noopener">Cetic.br</a>
+      </p>
+      <p>Material da atividade de extensão "Desmistificando a Inteligência Artificial: Uso Consciente e Seguro na Sociedade Digital", Engenharia de Software.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
